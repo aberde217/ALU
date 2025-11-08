@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/multiplier_circuit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier_circuit
+INFO: [VRFC 10-311] analyzing module partial_mult
+INFO: [VRFC 10-311] analyzing module CLA7
+INFO: [VRFC 10-311] analyzing module cla_logic
+INFO: [VRFC 10-311] analyzing module PFA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anayf/ALU_Project/ALU_Project.srcs/sim_1/new/tb_mult_circuit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mult_circuit
