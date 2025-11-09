@@ -3,11 +3,11 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Nov  8 11:14:55 2025
-# Process ID: 29964
+# Start of session at: Sat Nov  8 20:11:47 2025
+# Process ID: 25852
 # Current directory: C:/Users/anayf/ALU_Project/ALU_Project.runs/synth_1
-# Command line: vivado.exe -log subtractor_circuit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source subtractor_circuit.tcl
-# Log file: C:/Users/anayf/ALU_Project/ALU_Project.runs/synth_1/subtractor_circuit.vds
+# Command line: vivado.exe -log shift_right.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source shift_right.tcl
+# Log file: C:/Users/anayf/ALU_Project/ALU_Project.runs/synth_1/shift_right.vds
 # Journal file: C:/Users/anayf/ALU_Project/ALU_Project.runs/synth_1\vivado.jou
 # Running On        :DESKTOP-B4QI03S
 # Platform          :Windows Server 2016 or Windows 10
@@ -19,46 +19,40 @@
 # Host memory       :15919 MB
 # Swap memory       :9126 MB
 # Total Virtual     :25046 MB
-# Available Virtual :10492 MB
+# Available Virtual :7975 MB
 #-----------------------------------------------------------
-source subtractor_circuit.tcl -notrace
-create_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 564.898 ; gain = 233.070
+source shift_right.tcl -notrace
+create_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 567.895 ; gain = 233.961
 Command: read_checkpoint -auto_incremental -incremental C:/Users/anayf/ALU_Project/ALU_Project.srcs/utils_1/imports/synth_1/adder_circuit.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/anayf/ALU_Project/ALU_Project.srcs/utils_1/imports/synth_1/adder_circuit.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top subtractor_circuit -part xc7k70tfbv676-1
+Command: synth_design -top shift_right -part xc7k70tfbv676-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26124
+INFO: [Synth 8-7075] Helper process launched with PID 18288
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1022.941 ; gain = 444.461
+Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1023.695 ; gain = 445.164
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'one_comp', assumed default net type 'wire' [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/subtractor_circuit.v:45]
-INFO: [Synth 8-6157] synthesizing module 'subtractor_circuit' [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/subtractor_circuit.v:23]
-INFO: [Synth 8-6157] synthesizing module 'two_complement' [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/subtractor_circuit.v:35]
-INFO: [Synth 8-6157] synthesizing module 'adder_circuit' [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/adder_circuit.v:23]
-INFO: [Synth 8-6157] synthesizing module 'partial_full_adder' [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/adder_circuit.v:52]
-INFO: [Synth 8-6155] done synthesizing module 'partial_full_adder' (0#1) [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/adder_circuit.v:52]
-INFO: [Synth 8-6157] synthesizing module 'carry_lookahead_logic' [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/adder_circuit.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'carry_lookahead_logic' (0#1) [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/adder_circuit.v:40]
-INFO: [Synth 8-6155] done synthesizing module 'adder_circuit' (0#1) [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/adder_circuit.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'two_complement' (0#1) [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/subtractor_circuit.v:35]
-INFO: [Synth 8-6155] done synthesizing module 'subtractor_circuit' (0#1) [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/subtractor_circuit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shift_right' [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/shift_right.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'shift_right' (0#1) [C:/Users/anayf/ALU_Project/ALU_Project.srcs/sources_1/new/shift_right.v:22]
+WARNING: [Synth 8-3330] design shift_right has an empty top module
+WARNING: [Synth 8-3917] design shift_right has port out[3] driven by constant 0
+WARNING: [Synth 8-7129] Port A[0] in module shift_right is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1132.016 ; gain = 553.535
+Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1132.703 ; gain = 554.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1132.016 ; gain = 553.535
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1132.703 ; gain = 554.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1132.016 ; gain = 553.535
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1132.703 ; gain = 554.172
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
@@ -66,13 +60,13 @@ Start Preparing Guide Design
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/anayf/ALU_Project/ALU_Project.srcs/utils_1/imports/synth_1/adder_circuit.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1132.016 ; gain = 553.535
+Finished Doing Graph Differ : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1132.703 ; gain = 554.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1132.016 ; gain = 553.535
+Finished Preparing Guide Design : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1132.703 ; gain = 554.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1132.016 ; gain = 553.535
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1132.703 ; gain = 554.172
 ---------------------------------------------------------------------------------
 
 
@@ -89,8 +83,6 @@ No constraint files found.
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
-+---XORs : 
-	   2 Input      1 Bit         XORs := 16    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -109,21 +101,24 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design shift_right has an empty top module
+WARNING: [Synth 8-3917] design shift_right has port out[3] driven by constant 0
+WARNING: [Synth 8-7129] Port A[0] in module shift_right is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -141,37 +136,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -187,40 +182,37 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |LUT2 |     1|
-|2     |LUT4 |     1|
-|3     |LUT6 |     4|
-|4     |IBUF |     8|
-|5     |OBUF |     5|
+|1     |IBUF |     3|
+|2     |OBUF |     4|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    19|
+|1     |top      |       |     7|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1320.312 ; gain = 741.832
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1320.312 ; gain = 741.832
+Synthesis finished with 0 errors, 1 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1311.633 ; gain = 733.102
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.156 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1311.633 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1423.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1408.945 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 9869d038
+Synth Design complete | Checksum: e3193961
 INFO: [Common 17-83] Releasing license: Synthesis
-25 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+16 Infos, 7 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1423.645 ; gain = 854.410
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 1408.945 ; gain = 836.715
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1423.645 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/anayf/ALU_Project/ALU_Project.runs/synth_1/subtractor_circuit.dcp' has been generated.
-INFO: [Vivado 12-24828] Executing command : report_utilization -file subtractor_circuit_utilization_synth.rpt -pb subtractor_circuit_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 11:16:19 2025...
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1408.945 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anayf/ALU_Project/ALU_Project.runs/synth_1/shift_right.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file shift_right_utilization_synth.rpt -pb shift_right_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 20:13:18 2025...

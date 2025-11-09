@@ -1,22 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1762629282" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/adder_circuit.dcp">
-  <File Type="PA-TCL" Name="subtractor_circuit.tcl"/>
-  <File Type="REPORTS-TCL" Name="subtractor_circuit_reports.tcl"/>
-  <File Type="RDS-RDS" Name="subtractor_circuit.vds"/>
-  <File Type="RDS-UTIL" Name="multiplier_circuit_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="multiplier_circuit_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="subtractor_circuit.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1762661495" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/adder_circuit.dcp">
+  <File Type="PA-TCL" Name="shift_right.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="shift_right_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="shift_right_reports.tcl"/>
+  <File Type="RDS-RDS" Name="shift_right.vds"/>
+  <File Type="RDS-UTIL" Name="shift_right_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="shift_right_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="shift_right.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="shift_right_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="shift_right_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/adder_circuit.v">
+    <File Path="$PSRCDIR/sources_1/new/shift_right.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/subtractor_circuit.v">
+    <File Path="$PSRCDIR/sources_1/new/shift_left.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/or_circuit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/and_circuit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adder_circuit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/two_complement.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -30,9 +66,25 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/subtractor_circuit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu_circuit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="subtractor_circuit"/>
+      <Option Name="TopModule" Val="shift_right"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

@@ -1,2 +1,10 @@
 Time resolution is 1 ps
-$finish called at time : 70 ns : File "C:/Users/anayf/ALU_Project/ALU_Project.srcs/sim_1/new/tb_mult_circuit.v" Line 42
+Cout = x
+Cout = x
+Cout = x
+Cout = x
+Cout = 1
+Cout = 1
+Cout = 1
+Cout = 0
+$finish called at time : 80 ns : File "C:/Users/anayf/ALU_Project/ALU_Project.srcs/sim_1/new/alu_test.v" Line 45

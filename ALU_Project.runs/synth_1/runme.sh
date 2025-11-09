@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log subtractor_circuit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source subtractor_circuit.tcl
+EAStep vivado -log shift_right.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source shift_right.tcl

@@ -37,11 +37,10 @@ module two_complement(
     output [3:0] comp
     );
 wire Cout;
-wire [3:0] temp;
-assign temp[3] = ~(val[3]);
-assign temp[2] = ~(val[2]);
-assign temp[1] = ~(val[1]);
-assign temp[0] = ~(val[0]);
-assign one_comp = temp;
-adder_circuit plus_1(.A(temp), .B(4'b0001), .Cin(1'b0), .sum(comp), .Cout(Cout));
+wire [3:0] one_comp;
+assign one_comp[3] = ~(val[3]);
+assign one_comp[2] = ~(val[2]);
+assign one_comp[1] = ~(val[1]);
+assign one_comp[0] = ~(val[0]);
+adder_circuit plus_1(.A(one_comp), .B(4'b0001), .Cin(1'b0), .sum(comp), .Cout(Cout));
 endmodule 

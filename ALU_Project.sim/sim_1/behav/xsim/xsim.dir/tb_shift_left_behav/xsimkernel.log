@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_shift_left_behav/xsimk.exe -simmode gui -wdb tb_shift_left_behav.wdb -simrunnum 0 -socket 54376
+Design successfully loaded
+Design Loading Memory Usage: 9736 KB (Peak: 9736 KB)
+Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 10268 KB (Peak: 10268 KB)
+Simulation CPU Usage: 139 ms
