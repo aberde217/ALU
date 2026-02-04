@@ -9,3 +9,5 @@ This is Arithmetic Logic Unit is capable of supporting various operations involv
 * Shift Left (SHL) logic operation
 * Shift Right (SHR) logic operation
 
+Unsigned Addition: 
+I chose to use a carry-lookahead adder as the 
